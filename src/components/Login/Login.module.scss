@@ -1,10 +1,22 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 .wrapper {
+    display: flex;
+    position: relative;
     width: 800px;
     height: 525px;
-    display: flex;
     background: rgb(248, 248, 248);
     border-radius: 20px;
-    position: relative;
 }
 
 .login {
