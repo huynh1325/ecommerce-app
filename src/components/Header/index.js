@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
-import toko from '~/assets/img/toko.png';
+import toko from '~/assets/img/toko.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faMagnifyingGlass,
@@ -9,7 +9,6 @@ import {
     faCartShopping,
     faLocationDot,
 } from '@fortawesome/free-solid-svg-icons';
-import { useState, useEffect } from 'react';
 
 const cx = classNames.bind(styles);
 
@@ -18,6 +17,7 @@ const Header = () => {
         <div className={cx('header')}>
             <div className={cx('logo')}>
                 <img className={cx('logo-img')} src={toko} alt="logo" />
+                <span className={cx('logo-text')}>Tốt & Nhanh</span>
             </div>
             <div className={cx('header-btn')}>
                 <div className={cx('search')}>

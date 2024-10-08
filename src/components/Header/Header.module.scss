@@ -6,9 +6,20 @@
     display: flex;
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo-img {
-    width: 72px;
+    width: 100px;
     margin-right: 16px;
+}
+
+.logo-text {
+    color: var(--primary);
+    font-weight: 600;
+    margin-left: 4px;
 }
 
 .header-btn {
