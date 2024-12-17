@@ -1,0 +1,271 @@
+.main {
+    background-color: #f5f5fa;
+    display: block;
+}
+
+.main::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+    top: 81.6px;
+}
+
+.wrapper {
+    display: flex;
+    width: 1440px;
+    height: 1000px;
+    padding-top: 16px;
+    padding-left: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5f5fa;
+}
+
+.side-bar {
+    width: 230px;
+    max-height: 100vh;
+    position: sticky;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    top: 16px;
+    background-color: #fff;
+    display: flex;
+    padding-bottom: 117px;
+    flex-direction: column;
+    color: #38383d;
+    font-size: 1.4rem;
+    line-height: 20px;
+    border-radius: 6px;
+}
+
+.category {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 8px;
+}
+
+.category-title {
+    margin-bottom: 8px;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #27272a;
+}
+
+.category-list {
+    display: flex;
+    padding: 7px 16px;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-list:hover {
+    background: rgba(39, 39, 42, 0.12);
+}
+
+.category-image {
+    width: 32px;
+}
+
+.category-text {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 8px;
+    line-height: 150%;
+    color: #27272a;
+}
+
+.container {
+    width: 1138px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 25px;
+}
+
+.container-content {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+
+    .icon {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+        color: #0a68ff;
+        border-radius: 16px;
+        cursor: pointer;
+        z-index: 2;
+        background-color: rgb(255, 255, 255);
+        padding: 6px;
+    }
+
+    .icon-prev {
+        left: 8px;
+    }
+
+    .icon-next {
+        right: 8px;
+    }
+}
+
+.fs-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fs-header-left {
+    display: flex;
+}
+
+.fs-header-title {
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 150%;
+    color: #27272a;
+}
+
+.fs-header-countdown {
+    margin-left: 6px;
+    display: flex;
+
+    span {
+        font-size: 14px;
+        font-weight: 700;
+        background-color: #ff424e;
+        border-radius: 4px;
+        color: #fff;
+        width: 26px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    img {
+        width: 3px;
+        margin: 0px 4px;
+    }
+}
+
+.header-right {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 150%;
+    color: rgb(10, 104, 255);
+}
+
+.header-right:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.fs-list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 16px;
+    overflow: hidden;
+
+    .fs-product + .fs-product {
+        margin-left: 16px;
+    }
+
+    .fs-product {
+        flex-shrink: 0;
+        width: 171px;
+
+        .image {
+            width: 100%;
+            height: 171px;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            span {
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                padding: 2px;
+                background: #ffdbde;
+                border-radius: 4px;
+                color: #ff424e;
+                font-weight: 600;
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+            }
+        }
+
+        .deal-price {
+            min-height: 24px;
+            text-align: center;
+            font-weight: 500;
+            line-height: 2.4rem;
+
+            span {
+                color: #ff424e;
+            }
+        }
+
+        .deal-qty {
+            background-color: #ffaaaf;
+            color: #fff;
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 16px;
+
+            span {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                padding-left: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                text-align: center;
+            }
+        }
+    }
+
+    .fs-product:hover {
+        cursor: pointer;
+        opacity: 0.95;
+    }
+}
+
+.top-deal-header {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        img {
+            width: 204px;
+            height: 32px;
+        }
+    }
+}
